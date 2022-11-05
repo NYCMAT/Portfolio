@@ -1,33 +1,3 @@
-/* .container {
-    width:100%;
-    overflow: hidden;
-
-}
-.middle{
-    top: 10px;
-    margin-left: 100px;
-    margin-right: 100px;
-    margin-bottom: -2000px;
-    padding-bottom: 2000px;
-}
-
-.me{
-    border-radius: 50%;
-}
-
-.left{
-    float: left;
-    padding: 0px 10px 0px 0px;
-    width: 90px;
-    background: red;
-}
-
-.right{
-    float: right;
-    background: blue;
-    padding: 0px 10px 0px 10px;
-    width: 90px;
-} */
 
 *{
     padding: 0;
@@ -44,8 +14,12 @@
     background-size: cover;
     background-position: center;
 }
-.head{
+.head{    
+    color:white;
     font-size: 150px;
+    letter-spacing: 1px;
+    cursor: pointer;   
+    margin: 20px 0px 20px;
 }
 nav{
     display: flex;
@@ -56,12 +30,6 @@ nav{
     padding-right: 8%;  
 }
 
-.logo{
-    color:white;
-    font-size: 35px;
-    letter-spacing: 1px;
-    cursor: pointer;
-}
 
 span {
     color: lightseagreen;
@@ -81,7 +49,7 @@ nav ul li a{
 }
 
 nav ul li a:hover{
-    color: #f9004d;
+    color: lightseagreen;
     transition: .4s;
 
 }
@@ -124,8 +92,8 @@ h4{
     letter-spacing: 2px;
     font-size: 20px;
 }
-
-.second{
+/* Second page */
+#second{
     width: 100%;
     padding: 100px 0px;
     background-image: url(https://i.imgur.com/wcxbqhl.png) ;
@@ -166,7 +134,7 @@ h4{
     margin-bottom: 45px;
 
 }
-button{
+/* button{
     background-color: lightseagreen;
     color: white;
     text-decoration: none;
@@ -176,10 +144,126 @@ button{
     border-radius: 30px;
     transition: .5s;
 
+} */
+.btn{
+    background-color: lightseagreen;
+    color: white;
+    text-decoration: none;
+    border: 2px solid transparent;
+    font-weight: bold;
+    padding: 10px 25px;
+    border-radius: 30px;
+    transition: transform .4s;
 }
 
-button:hover{
+.btn:hover{
     background-color: transparent;
     border: 2px solid lightseagreen;
     cursor: pointer;
+    transform: scale(1.5);
+    transition: transform .5s;
+}
+
+/* hi */
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.container > img {
+    width: 50%;
+}
+.container > h1 {
+    font-family: "Montserrat", impact;
+    font-weight: 800;
+    font-size: 2.5em;
+    margin-top: -1%;
+    color: #4caaa8;
+    text-shadow: 1px 1px #f2cd99;
+    letter-spacing: 2px;
+}
+/* ======= CAROUSEL SECTION ======== */
+.carousel-container {
+    width: 70%;
+    display: flex;
+    justify-content: space-around;
+}
+.carousel-images {
+    width: 80%;
+    background: grey;
+    padding: 10px;
+    border-radius: 10px;
+    box-sizing: border-box;
+    box-shadow: 2px 2px grey;
+    
+}
+.carousel-images img {
+    width: 100%;
+    border-radius: 10px;
+    display: none;
+}
+.carousel-images img:first-of-type {
+    display: block;
+  }
+  
+.carousel-button {
+    align-self: center;
+    background: lightseagreen;
+    color: #888;
+    padding: 10px;
+    border-radius: 50%;
+    text-align: center;
+    box-shadow: 1px 1px lightgrey;
+}
+.carousel-button:hover {
+    cursor: pointer;
+    background: grey;
+    box-shadow: 1px 1px #f2cd99;
+    color: white;
+}
+/* Portfolio Page */
+#portfolio{
+    width: 100%;
+    padding: 100px 0px;
+    background-image: url(https://i.imgur.com/wcxbqhl.png) ;
+}
+
+#modal{
+	background-color: rgba(0,0,0,0.4);
+	position: fixed;
+	top: 0;
+	left: 0;
+	height: 100%;
+	width: 100%;
+	z-index: 1;
+	overflow: auto;
+	display: none;
+}
+
+#modal-textbox{
+	background-color: white;
+	height: 350px;
+	width: 550px;
+	border-radius: 2px;
+	margin: 150px auto;
+	box-shadow: 0 2px 2px rgba(0, 0, 0, 0.2);
+	padding: 2%;
+	line-height: 120%;
+	font-family: Arial, Helvetica, sans-serif;
+}
+
+#modal-footer{
+
+	text-align: right;
+
+}
+.modal-buttons{
+	padding: 14px 18px;
+	background-color: #677996;
+	border: none;
+	outline: none;
+	border-radius: 3px;
+	color: white;
+	cursor: pointer;
+	font-family: Arial, Helvetica, sans-serif;
 }
