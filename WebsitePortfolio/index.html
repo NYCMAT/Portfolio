@@ -6,12 +6,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Matthew's  Portfolio</title>
     <link rel="stylesheet" href="style.css" />
-    <script
-            src="https://code.jquery.com/jquery-3.3.1.min.js"
-            integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
-            crossorigin="anonymous"
-        ></script>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js"
+        integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdn.linearicons.com/free/1.0.0/icon-font.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+        integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
     <script src="app.js" charset="utf-8"></script>
 </head>
 <body>
@@ -21,10 +21,10 @@
         <nav>
             <h1 class="head">M.<span>C</span></h1>
             <ul>
-                <li><a href="file:///Users/matthewchin/Desktop/Project%201/Portfolio/WebsitePortfolio/Homepage.html">Home</a></li>
+                <li><a href="#first">Home</a></li>
                 <li><a href="#second">Bio</a></li>
                 <li><a href="#portfolio">Portfolio</a></li>
-                <li><a href="#">Contact Me</a></li>
+                <li><a href="#last">Contact Me</a></li>
 
             </ul>
             <a href="#" class="btn">Follow Me</a>
@@ -50,15 +50,10 @@
                     <!-- images -->
                     <div class="carousel-images">
                         <img src="https://i.imgur.com/YHMbq8p.jpg" alt="Me at Vangough" />
-                        <img
-                            src="https://i.imgur.com/E2wUlp3.jpg"
-                            alt="Me in LA"
-                        />
-                        <img
-                            src="https://i.imgur.com/Ck4WeSP.jpg"
-                            alt="Me in Miami"
-                        />
+                        <img src="https://i.imgur.com/E2wUlp3.jpg" alt="Me in LA" />
+                        <img src="https://i.imgur.com/Ck4WeSP.jpg" alt="Me in Miami" />
                         <img src="https://i.imgur.com/ea3fjG4.jpg" alt="Me at yosemite" />
+                        
                     </div>
                     <!-- next button -->
                     <div class="carousel-button next">
@@ -86,13 +81,87 @@
 
     <div id="portfolio">
         <div class="title">
-            <h2>My Portfolio</h2>
+            <h2>My <span>Portfolio</span></h2>
         </div>
-    
-        <button id="openModal">Resume</button>
+        
+        <div class="box">
+            <div class="card">
+                <i class="fa-solid fa-bars"></i>
+                <h5>Web Development</h5>
+                <div class="pra">
+                    <p>This is where discriptions of my projects go</p>
+
+                    <p style="text-align: center;">
+                        <button id="openModal">Read More</button>
+                        <div id="modal">
+                            <div id="modal-textbox">
+                                <p>Hello</p>
+                                <div id="modal-footer">
+                                    <button class="modal-buttons" id="close" href="#">Close</button>
+                                </div>
+                
+                            </div>
+                    
+                        </div>
+                    </p>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="box">
+            <div class="card">
+                <i class="fa-solid fa-dog"></i>
+                <h5>Web Development</h5>
+                <div class="pra">
+                    <p>This is where discriptions of my projects go</p>
+
+                    <p style="text-align: center;">
+                        <button id="openModal">Read More</button>
+                        <div id="modal">
+                            <div id="modal-textbox">
+                                <p>meh</p>
+                                <div id="modal-footer">
+                                    <button class="modal-buttons" id="close" href="#">Close</button>
+                                </div>
+                
+                            </div>
+                    
+                        </div>
+                    </p>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="box">
+            <div class="card">
+                <i class="fa-solid fa-user-secret"></i>
+                <h5>Web Development</h5>
+                <div class="pra">
+                    <p>This is where discriptions of my projects go</p>
+
+                    <p style="text-align: center;">
+                        <button id="openModal">Resume</button>
+                        <div id="modal">
+                            <div id="modal-textbox">
+                                <p>bye</p>
+                                <div id="modal-footer">
+                                    <button class="modal-buttons" id="close" href="#">Close</button>
+                                </div>
+                
+                            </div>
+                    
+                        </div>
+                    </p>
+                </div>
+            </div>
+
+        </div>
+            
+        <!-- <button id="openModal">Resume</button>
         <div id="modal">
             <div id="modal-textbox">
-                <!-- <a id="close" href="#">Close</a> -->
                 <p>Hello</p>
                 <div id="modal-footer">
                     <button class="modal-buttons" id="close" href="#">Close</button>
@@ -100,9 +169,25 @@
 
             </div>
     
-        </div>
+        </div> -->
     
     </div>
+
+    <!--Last page-->
+    <div id="last">
+        <p>Let me get you a beautiful website</p>
+        <a class="button-two" href="#">Hire Me</a>
+    </div>
+    <!-- foot -->
+    <footer>
+        <p>Matthew Chin</p>
+        <p>Please clink on the links below to follow me!</p>
+        <div class="social">
+            <a href="#"><i class="fa-brands fa-github"></i></a>
+            <a href="#"><i class="fa-brands fa-linkedin"></i></a>
+            <a href="#"><i class="fa-brands fa-codepen"></i></a>
+        </div>
+    </footer>
 </body>
 </html>
 

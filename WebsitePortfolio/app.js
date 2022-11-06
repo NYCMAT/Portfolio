@@ -26,6 +26,8 @@ $(() => {
         .eq(currentImgIndex)
         .css("display", "block");
     });
+
+    
     const openModal = () => {
         $modal.css({
           display: "block",
@@ -44,4 +46,10 @@ $(() => {
     
       $openBtn.on("click", openModal);
       $closeBtn.on("click", closeModal);
+
+
+
+
+
+
   });

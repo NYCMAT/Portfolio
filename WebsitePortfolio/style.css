@@ -20,6 +20,7 @@
     letter-spacing: 1px;
     cursor: pointer;   
     margin: 20px 0px 20px;
+    display: inline-flex;
 }
 nav{
     display: flex;
@@ -208,16 +209,16 @@ h4{
   
 .carousel-button {
     align-self: center;
-    background: lightseagreen;
-    color: #888;
+    background: grey;
+    color: red;
     padding: 10px;
     border-radius: 50%;
     text-align: center;
-    box-shadow: 1px 1px lightgrey;
+    box-shadow: 1px 1px darkgrey;
 }
 .carousel-button:hover {
     cursor: pointer;
-    background: grey;
+    background: lightseagreen;
     box-shadow: 1px 1px #f2cd99;
     color: white;
 }
@@ -227,6 +228,79 @@ h4{
     padding: 100px 0px;
     background-image: url(https://i.imgur.com/wcxbqhl.png) ;
 }
+
+.title h2{
+    color: white;
+    font-size: 75px;
+    width: 1130px;
+    margin: 30px auto;
+    text-align: center;
+
+}
+
+.box {
+    display: flex;
+    justify-content: center ;
+    align-items: center;
+    min-height: 400px;
+}
+
+.card {
+    height: 365px;
+    width: 335;
+    padding: 20px 35px;
+    background: black;
+    opacity: 80%;
+    border-radius: 25px ;
+    margin: 15px;
+    position: relative;
+    overflow: hidden;
+    text-align: center;
+
+}
+
+.card i{
+    font-size: 50px;
+    display: block;
+    text-align: center;
+    margin: 25px 0px;
+    color: lightseagreen;
+
+}
+
+
+h5{
+    color: white;
+    font-size: 23px;
+    margin-bottom: 15px;
+
+}
+
+.pra p{
+    color: #4caaa8;
+    font-size: 23px;
+    line-height: 27px;
+    margin-bottom: 25px;
+}
+
+.card .button{
+    background-color: lightseagreen;
+    color: white;
+    text-decoration: none;
+    border: 2px solid transparent;
+    font-weight: bold;
+    padding: 9px 22px;
+    border-radius: 30px;
+    transition: transform .4s;
+
+}
+
+.card .button:hover{
+    background-color: transparent;
+    border: 2px solid lightseagreen;
+    cursor: pointer;
+}
+
 
 #modal{
 	background-color: rgba(0,0,0,0.4);
@@ -238,6 +312,7 @@ h4{
 	z-index: 1;
 	overflow: auto;
 	display: none;
+
 }
 
 #modal-textbox{
@@ -257,13 +332,122 @@ h4{
 	text-align: right;
 
 }
-.modal-buttons{
-	padding: 14px 18px;
-	background-color: #677996;
-	border: none;
-	outline: none;
-	border-radius: 3px;
-	color: white;
-	cursor: pointer;
-	font-family: Arial, Helvetica, sans-serif;
+
+#close {
+    background-color: lightseagreen;
+    color: white;
+    text-decoration: none;
+    border: 2px solid transparent;
+    font-weight: bold;
+    padding: 10px 25px;
+    border-radius: 30px;
+    transition: transform .4s;
 }
+
+#openModal {
+    background-color: lightseagreen;
+    color: white;
+    text-decoration: none;
+    border: 2px solid transparent;
+    font-weight: bold;
+    padding: 10px 25px;
+    border-radius: 30px;
+    transition: transform .4s;
+}
+
+#openModal:hover{
+    transform: scale(1.2);
+}
+
+/* Last Page */
+
+#last {
+    width: 100%;
+    height: 290px;
+    background-image:url(https://i.imgur.com/wcxbqhl.png) ;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+
+}
+
+#last p{
+    color: white;
+    font-size: 75px;
+    font-weight: bold;
+
+}
+
+#last .button-two{
+    background-color: lightseagreen;
+    color: white;
+    text-decoration: none;
+    border: 2px solid transparent;
+    font-weight: bold;
+    padding: 10px 25px;
+    border-radius: 30px;
+    transition: transform .4s;
+}
+
+#last .button-two:hover{
+    background-color: transparent;
+    border: 2px solid lightseagreen;
+    cursor: pointer;
+    transform: scale(1.5);
+    transition: transform .5s;
+}
+
+footer {
+    width: 100%;
+    height: 400px;
+    background-image:url(https://i.imgur.com/wcxbqhl.png) ;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+}
+
+footer p:nth-child(1){
+    font-size: 30px;
+    color: white;
+    margin-bottom: 20px;
+    font-weight: bold;
+}
+
+footer p:nth-child(2){
+    color: white;
+    font-size: 17px;
+    width: 500px;
+    text-align: center;
+    line-height: 26px;
+}
+
+.social {
+    display: flex;
+}
+
+.social a{
+    width: 45px;
+    height: 45px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: lightseagreen;
+    border-radius: 50%;
+    margin: 22px 22px;
+    color: white;
+    text-decoration: none;
+    font-size: 20px;
+
+    
+}
+
+.social a:hover{
+    background-color: transparent;
+    border: 2px solid lightseagreen;
+    cursor: pointer;
+    transform: scale(1.5);
+    transition: transform .5s;
+}
+
